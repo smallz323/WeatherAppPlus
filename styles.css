@@ -1,0 +1,107 @@
+.container {
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #d5dee7 0%,
+    #ffafbd 0%,
+    #c9ffbf 100%
+  );
+  border: 3px solid;
+  max-width: 95%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h3 {
+  font-size: 35px;
+  padding: 25px 60px 25px 60px;
+  display: block;
+  margin: 0 auto;
+  color: #8480b5;
+}
+.left-align {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 100;
+  float: left;
+}
+.weather-measure {
+  font-size: medium;
+  float: left;
+}
+.weather-notation {
+  font-size: 16px;
+  float: right;
+  float: top;
+}
+.form,
+.btn-btn {
+  display: block;
+  margin: 0 auto;
+  float: center;
+}
+.btn.btn {
+  display: block;
+  margin: 0 auto;
+}
+.section.botton {
+  margin-bottom: 45px;
+}
+.btn.secondary {
+  margin-bottom: 45px;
+}
+.row-col-3 {
+  float: left;
+  padding-left: 30px;
+}
+.row-col-2 {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+}
+.row-col-6 {
+  float: left;
+  display: block;
+  font-size: 30px;
+}
+.col-6 {
+  display: block;
+  float: right;
+  font-size: 55px;
+}
+.weather-badge {
+  font-size: 20px;
+}
+.card-body {
+  background: transparent;
+  display: inline-block;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+.card-text {
+  font-size: 20px;
+  color: #138496;
+  text-align: center;
+}
+div.date-time {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 19px;
+  color: #8480b5;
+}
+
+.row-col-5 {
+  background: transparent;
+  margin-right: -30px;
+  margin-left: 30px;
+  padding: 40px;
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+}
