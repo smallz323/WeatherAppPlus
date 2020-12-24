@@ -28,7 +28,6 @@ function showSearch(event) {
   axios.get(apiUrl).then(showTemperature);
 };
 let weatherButton = document.querySelector("#search-city");
-weatherButton.addEventListener("submit", showSearch)
-
+weatherButton.addEventListener("submit", showSearch);
 
 
