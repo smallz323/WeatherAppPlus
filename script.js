@@ -18,11 +18,6 @@ function showTemperature(response) {
   document.querySelector("#feels-like").innerHTML = `Feels Like: ` + Math.round(response.data.main.feels_like) + `⁰F` 
   document.querySelector("#weather-badge").innerHTML = response.data.weather[0].description;
 }
-
-function userGeoLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.userGeoLocation(searchLocation);
-};
 function showSearch(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input-search").value;
@@ -34,10 +29,6 @@ function showSearch(event) {
 };
 let weatherButton = document.querySelector("#search-city");
 weatherButton.addEventListener("submit", showSearch)
-
-///
-let currentLocationButton = document.querySelector("#current-location");
-currentLocationButton.addEventListener("click", userGeoLocation);
 
 
 

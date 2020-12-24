@@ -27,15 +27,16 @@ h3 {
   font-weight: 100;
   float: left;
 }
-.weather-measure {
+.weather-measure
+ {
   font-size: medium;
-  float: left;
-}
-.weather-notation {
   font-size: 16px;
-  float: right;
-  float: top;
+  }
+.weather-notation{
+  font-size:25px;
+  font-weight: 600;
 }
+
 .form,
 .btn-btn {
   display: block;
@@ -46,19 +47,13 @@ h3 {
   display: block;
   margin: 0 auto;
 }
-.section.botton {
-  margin-bottom: 45px;
-}
-.btn.secondary {
-  margin-bottom: 45px;
-}
+
 .row-col-3 {
   float: left;
   padding-left: 30px;
 }
 .row-col-2 {
   display: inline-block;
-  text-align: center;
   padding-top: 20px;
 }
 .row-col-6 {
