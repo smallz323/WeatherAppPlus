@@ -7,12 +7,11 @@
     #c9ffbf 100%
   );
   border: 3px solid;
-  max-width: 95%;
-  border-radius: 10px;
+  max-width: 500px;
+  border-radius: 5px;
   display: block;
   margin: 10px;
 }
-
 h1,
 h3 {
   font-size: 35px;
@@ -27,13 +26,12 @@ h3 {
   font-weight: 100;
   float: left;
 }
-.weather-measure
- {
+.weather-measure {
   font-size: medium;
   font-size: 16px;
-  }
-.weather-notation{
-  font-size:25px;
+}
+.weather-notation {
+  font-size: 25px;
   font-weight: 600;
 }
 
