@@ -7,18 +7,17 @@
     #c9ffbf 100%
   );
   border: 3px solid;
-  max-width: 500px;
   border-radius: 5px;
   display: block;
-  margin: 10px;
+  margin: 0 auto;
 }
-h1,
-h3 {
-  font-size: 35px;
+h1.border {
+  font-size: 25px;
   padding: 25px 60px 25px 60px;
   display: block;
-  margin: 0 auto;
+  float: top;
   color: #8480b5;
+  max-width: 600px;
 }
 .left-align {
   list-style: none;
@@ -45,14 +44,17 @@ h3 {
   display: block;
   margin: 0 auto;
 }
-
+div.row{
+  display: block;
+  margin: 0 auto;
+  float: center;
+}
 .row-col-3 {
   float: left;
   padding-left: 30px;
 }
 .row-col-2 {
   display: inline-block;
-  padding-top: 20px;
 }
 .row-col-6 {
   float: left;
@@ -67,17 +69,7 @@ h3 {
 .weather-badge {
   font-size: 20px;
 }
-.card-body {
-  background: transparent;
-  display: inline-block;
-  margin-right: 35px;
-  margin-left: 35px;
-}
-.card-text {
-  font-size: 20px;
-  color: #138496;
-  text-align: center;
-}
+
 div.date-time {
   display: block;
   margin-top: 15px;
