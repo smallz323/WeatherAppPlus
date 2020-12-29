@@ -10,28 +10,29 @@
   border-radius: 5px;
   display: block;
   margin: 0 auto;
+  max-width: 600px;
 }
-h1.border {
+h1 {
   font-size: 25px;
   padding: 25px 60px 25px 60px;
   display: block;
-  float: top;
+  margin: 0 auto;
   color: #8480b5;
-  max-width: 600px;
+  max-width: 400px;
 }
-.left-align {
+.right-align {
   list-style: none;
   font-size: 15px;
   font-weight: 100;
-  float: left;
+  display: block;
+  float: inline-end;
 }
-.weather-measure {
-  font-size: medium;
-  font-size: 16px;
+span.weather-measure {
+  font-size: 45px;
 }
 .weather-notation {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .form,
@@ -44,26 +45,20 @@ h1.border {
   display: block;
   margin: 0 auto;
 }
-div.row{
+div.row {
   display: block;
   margin: 0 auto;
   float: center;
 }
-.row-col-3 {
-  float: left;
-  padding-left: 30px;
-}
-.row-col-2 {
-  display: inline-block;
-}
-.row-col-6 {
-  float: left;
+
+.row-col-1 {
+  text-align: center;
   display: block;
-  font-size: 30px;
+  font-size: 45px;
 }
 .col-6 {
   display: block;
-  float: right;
+  text-align: justify;
   font-size: 55px;
 }
 .weather-badge {
