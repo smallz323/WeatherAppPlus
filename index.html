@@ -13,50 +13,55 @@
 
 </head>
 
-<body>
-    <div class="container">
-        <div id="app">
-            <div class=" row row-col-2">
-                    <h1>
+<div class="container">
+    <div id="app">
+        <div class=" row row-col-2">
+            <h1 class="border border-dark rounded-pill shadow ">
+                <div class="row-col-6" id="header-city">San Diego, CA </div>
+                <div class="row-col-3" id="header-temperature">
 
-         <div class="row-col-6" id = "header-city" >San Diego, CA </div>
-         <div class="row-col-3" id= "header-temperature"> </div>
-             <div class = "row-col-4">   <span class ="weather-measure">°F</span>
-         </div>
-        
-         <ul class = "right-align">
-             <li id = "weather-badge"> Cloudy
-             </li>
-            </br>
-            <li id = "feels-like">
-                Feels like: 
-            </li>
-            </li>
-            <li id = "humid">
-                Humidity:45%
-            </li>
-            <li id = "wind">
-                Wind: 5 m/h
-            </li>
-        </ul>
-    
+                </div>
+                <span class="weather-measure">°F</span>
+                <br />
+                <div class="weather-notation" id="weather-badge">Cloudy</div>
+                <ul class="left-align">
+                    <li id="feels-like">
+                        Feels like:
+                    </li>
+                    </li>
+                    <li id="humid">
+                        Humidity:45%
+                    </li>
+                    <li id="wind">
+                        Wind: 5 m/h
+                    </li>
+                </ul>
+
         </div>
+
         </h1>
-        <form id = "search-city">
-            <div class="form-group" >
-                <input type="city" class="form" placeholder="Enter City"
-                 autocomplete="off" autofocus="on" id= "city-input-search">
+        <section>
+            <div class="date-time"> Saturday 10:00</div>
+
+        </section>
+
+        <form id="search-city">
+            <div class="form-group">
+                <input type="city" class="form" placeholder="Enter City" autocomplete="off" autofocus="on"
+                    id="city-input-search">
             </div>
             <button type="submit" class="btn btn-info">Get Weather</button>
-            <div class="date-time"> Saturday 10:00</div>
         </form>
-                    
+
         <p>
-           <a href="https://github.com/smallz323/WeatherAppPlus.git">Open Souce Code</a> Nicole Small
+            Designed by Nicole Small
         </p>
     </div>
-  
-    <script src="script.js"></script>
-    </div> 
+
+    <script src="script.js">
+    </script>
+</div>
+</div>
 </body>
+
 </html>
