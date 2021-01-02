@@ -1,17 +1,4 @@
-.container {
-  font-family: "Nunito", sans-serif;
-  background-image: linear-gradient(
-    to top,
-    #d5dee7 0%,
-    #ffafbd 0%,
-    #c9ffbf 100%
-  );
-  border: 3px solid;
-  max-width: 95%;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-}
+
 
 h1 {
   font-size: 35px;
@@ -26,8 +13,21 @@ footer {
   font-size: 12px;
   text-align: center;
 }
-
-.left-align {
+.container {
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #d5dee7 0%,
+    #ffafbd 0%,
+    #c9ffbf 100%
+  );
+  border: 3px solid;
+  max-width: 600px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.float-left {
   list-style: none;
   font-size: 15px;
   font-weight: 100;
@@ -36,13 +36,17 @@ footer {
 .weather-measure{
   font-size: medium;
   float: left;
+  padding-right: 25px;
 
 }
-.weather-notation{
+.weather-notation,
+.weather-notation-display
+{
   font-size: 16px;
-  float: right;
-  float: top ;
+  float: right ;
+  position:relative;
 }
+
 .form,
 .btn-btn {
   display: block;
@@ -75,10 +79,8 @@ footer {
 
 div.date-time {
   display: block;
-  margin-top: 15px;
-  margin-bottom: 10px;
   text-align: center;
-  font-size: 19px;
+  font-size: 16px;
   color:#8480b5 ;
 }
 
