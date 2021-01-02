@@ -1,5 +1,3 @@
-
-
 h1 {
   font-size: 35px;
   padding: 25px 65px 25px 65px;
@@ -32,19 +30,20 @@ footer {
   font-size: 15px;
   font-weight: 100;
   float: left;
+  text-transform: capitalize;
+  line-height: normal;
 }
-.weather-measure{
+.weather-measure {
   font-size: medium;
   float: left;
   padding-right: 25px;
-
 }
-.weather-notation,
-.weather-notation-display
-{
+
+.weather-notation-display {
+  text-transform: capitalize;
   font-size: 16px;
-  float: right ;
-  position:relative;
+  float: right;
+  position: relative;
 }
 
 .form,
@@ -52,8 +51,8 @@ footer {
   display: block;
   margin: 0 auto;
   float: center;
-
 }
+
 .btn.btn {
   display: block;
   margin: 0 auto;
@@ -73,7 +72,7 @@ footer {
   float: right;
   font-size: 55px;
 }
-.weather-badge{
+.weather-badge {
   font-size: 20px;
 }
 
@@ -81,6 +80,5 @@ div.date-time {
   display: block;
   text-align: center;
   font-size: 16px;
-  color:#8480b5 ;
+  color: #8480b5;
 }
-

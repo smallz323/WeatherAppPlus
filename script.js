@@ -13,8 +13,7 @@ function showTemperature(response) {
 
   document.querySelector("#header-temperature").innerHTML = Math.round (response.data.main.temp);
   document.querySelector("#header-city").innerHTML = response.data.name;
-  document.querySelector("#wind").innerHTML = `Wind Speed : `+ Math.round(response.data.wind.speed) + `m/h`
-  document.querySelector("#humid").innerHTML = `Humidity : ` + response.data.main.humidity + `%`;
+   document.querySelector("#humid").innerHTML = `Humidity : ` + response.data.main.humidity + `%`;
   document.querySelector("#feels-like").innerHTML = `Feels Like: ` + Math.round(response.data.main.feels_like) + `⁰F` 
   document.querySelector("#weather-badge").innerHTML = response.data.weather[0].description;
 }
