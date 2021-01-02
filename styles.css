@@ -13,14 +13,20 @@
   margin: 0 auto;
 }
 
-h1,
-h3 {
+h1 {
   font-size: 35px;
-  padding: 25px 60px 25px 60px;
+  padding: 25px 65px 25px 65px;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   color: #8480b5;
 }
+
+footer {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
 .left-align {
   list-style: none;
   font-size: 15px;
@@ -48,18 +54,11 @@ h3 {
   display: block;
   margin: 0 auto;
 }
-.section.botton{
-  margin-bottom:45px;
-  
-}
-.btn.secondary {
-  margin-bottom: 45px;
-}
+
 .row-col-3 {
   float: left;
   padding-left: 30px;
 }
-
 .row-col-6 {
   float: left;
   display: block;
@@ -83,8 +82,3 @@ div.date-time {
   color:#8480b5 ;
 }
 
-p {
-  padding-top: 10px;
-  font-size: 12px;
-  text-align: center;
-}
