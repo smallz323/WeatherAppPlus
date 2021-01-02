@@ -8,7 +8,6 @@ let minutes = now.getMinutes();
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[now.getDay()];
 if (minutes < 10) {minutes = `0${minutes}`
-
 }
 
 clock.innerHTML = `${day} ${hour}:${minutes}`;
@@ -36,4 +35,13 @@ function showTemperature(response) {
   let weatherButton = document.querySelector("#search-city");
   weatherButton.addEventListener("submit", showSearch);
 
+function convertCelsiusTemp(event) {
+  event.preventDefault();
+  let celsiusTemperature = (70 - 32) * 5 / 9;
+  let temperatureChange = document.querySelector("#header-Temperature");
+ temperatureChange.innerHTML = Math.round(celsiusTemperature);
+}
 
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertCelsiusTemp);
