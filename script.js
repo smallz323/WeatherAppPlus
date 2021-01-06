@@ -17,7 +17,7 @@ function showTemperature(response) {
   document.querySelector("#header-temperature").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#header-city").innerHTML = response.data.name;
   document.querySelector("#humid").innerHTML = `Humidity: ` + response.data.main.humidity + `%`;
-  document.querySelector("#feels-like").innerHTML = `Feels Like: ` + Math.round(response.data.main.feels_like) + `⁰F`
+  document.querySelector("#feels-like").innerHTML = `Feels like: ` + Math.round(response.data.main.feels_like) + `⁰F`
   document.querySelector("#weather-icon-text").innerHTML = response.data.weather[0].description;
   let weatherIcon = response.data.weather[0].icon;
   document.querySelector("#wind").innerHTML = `Wind speed: `+ Math.round (response.data.wind.speed) + `m/h`
@@ -33,6 +33,14 @@ function showTemperature(response) {
     axios.get(apiUrl).then(showTemperature);
   };
 
+function celsiusTemperature(event) {
+  event.preventDefault();
+  alert("Testing");
+  }
   let weatherButton = document.querySelector("#search-city");
-  weatherButton.addEventListener("submit", showSearch);
+weatherButton.addEventListener("submit", showSearch);
+  
+let celsiusConvert = document.querySelector("#celsius-convert");
+celsiusConvert.addEventListener("click", celsiusTemperature)
 
+ 
