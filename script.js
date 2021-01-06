@@ -16,12 +16,14 @@ clock.innerHTML = `${day} ${hour}:${minutes}`;
 
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#header-temperature");
+  let weatherIcon = response.data.weather[0].icon;
   document.querySelector("#header-city").innerHTML = response.data.name;
   document.querySelector("#humid").innerHTML = `Humidity: ` + response.data.main.humidity + `%`;
   document.querySelector("#feels-like").innerHTML = `Feels like: ` + Math.round(response.data.main.feels_like) + `⁰F`;
   document.querySelector("#weather-icon-text").innerHTML = response.data.weather[0].description;
   document.querySelector("#wind").innerHTML = `Wind speed: ` + Math.round(response.data.wind.speed) + `m/h`;
-  document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`).innerHTML =response.data.weather[0].icon;
+  
+  document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
   
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
