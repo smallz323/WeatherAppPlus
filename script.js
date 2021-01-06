@@ -28,9 +28,10 @@ function showTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   
-}
 
-  
+  farenheitTemperature = Math.round(response.data.main.temp);
+
+} 
   function showSearch(event) {
     event.preventDefault();
     let city = document.querySelector("#city-input-search").value;
@@ -43,14 +44,22 @@ function showTemperature(response) {
 
 function celsiusTemperature(event) {
   event.preventDefault();
-  let celsisusDisplayTemperature = Math.round((62 - 32) * 5/9) ;
+  let celsisusDisplayTemperature = Math.round((farenheitTemperature - 32) * 5/9) ;
   let temperatureElement = document.querySelector("#header-temperature");
   temperatureElement.innerHTML = celsisusDisplayTemperature;
 }
 
-
+function farenheitConvert(event) {
+  event.preventDefault();
+  let displayFarenheit = document.querySelector("#header-temperature");
+  displayFarenheit.innerHTML = farenheitTemperature;
+}
+let farenheitTemperature = null;
   let weatherButton = document.querySelector("#search-city");
 weatherButton.addEventListener("submit", showSearch);
   
 let celsiusConvert = document.querySelector("#celsius-convert");
 celsiusConvert.addEventListener("click", celsiusTemperature);
+
+let startingTemperature = document.querySelector("#start-temperature");
+startingTemperature.addEventListener("click", farenheitConvert);
