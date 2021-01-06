@@ -37,6 +37,7 @@ footer {
   font-size: medium;
   float: left;
   padding-right: 25px;
+  text-emphasis-color: none;
 }
 
 .weather-notation-display {

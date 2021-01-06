@@ -14,7 +14,9 @@ clock.innerHTML = `${day} ${hour}:${minutes}`;
 
 
 function showTemperature(response) {
-  document.querySelector("#header-temperature").innerHTML = Math.round(response.data.main.temp);
+  let temperatureElement =
+    document.querySelector("#header-temperature");
+      temperatureElement.innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#header-city").innerHTML = response.data.name;
   document.querySelector("#humid").innerHTML = `Humidity: ` + response.data.main.humidity + `%`;
   document.querySelector("#feels-like").innerHTML = `Feels like: ` + Math.round(response.data.main.feels_like) + `⁰F`
@@ -35,8 +37,10 @@ function showTemperature(response) {
 
 function celsiusTemperature(event) {
   event.preventDefault();
-  alert("Testing");
-  }
+  let celsisusDisplayTemperature = Math.round((70 - 32) * 5/9) ;
+  let temperatureElement = document.querySelector("#header-temperature");
+  temperatureElement.innerHTML = celsisusDisplayTemperature;
+}
   let weatherButton = document.querySelector("#search-city");
 weatherButton.addEventListener("submit", showSearch);
   
