@@ -30,7 +30,6 @@ footer {
   font-size: 15px;
   font-weight: 100;
   float: left;
-  text-transform: capitalize;
   line-height: normal;
 }
 .weather-measure {
@@ -40,12 +39,16 @@ footer {
 }
 
 .weather-notation-display {
-  text-transform: capitalize;
-  font-size: 16px;
+  font-size: 20px;
   float: right;
   position: relative;
 }
-
+.weather-text {
+  font-size: 16px;
+  display: inline-block;
+  text-transform: capitalize;
+  
+}
 .form,
 .btn-btn {
   display: block;
@@ -73,7 +76,7 @@ footer {
   font-size: 55px;
 }
 .weather-badge {
-  font-size: 20px;
+  font-size: 25x;
 }
 
 div.date-time {
